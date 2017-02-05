@@ -56,7 +56,9 @@ An Object must register itself with EventBus in order to start receving Observab
 ```java
 EventBus.getDefault().register(this);
 ```
-Each Observer, for example, *ComscoreSubscriber* can use EventBus annotations to register and subscribe for observable events.
+Each Observer, for example, [*ComscoreSubscriber*][SUB] can use EventBus annotations to register and subscribe for observable events.
+
+[SUB]: <https://github.com/rgr-myrg/bento-box-android/blob/master/BentoBox/app/src/main/java/com/vmn/bento/subscriber/ComscoreSubscriber.java>
 
 Events can be triggered by any other Object, i.e., BentoBox, MediaPlayer, Activity, as long as it is done via EventBus. For example:
 ```java
