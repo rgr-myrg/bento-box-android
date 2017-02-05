@@ -33,7 +33,7 @@ BentoBox bento = BentoBox.Builder()
 		})
 		.build();
 ```
-The Activity can chain events associated with the request, for example, *onConfigReady*, *onError* and receive asynchronous callbacks with the expected payload.
+Method handlers associated with the request can be chained, for example, *onConfigReady*, *onError*, to receive asynchronous callbacks with the expected payload.
 
 Instances can be reused once created. For example, track an event when a floating action button is clicked:
 ```java
